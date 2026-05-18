@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Silvia's Flask Page</title>
+    {{ bootstrap.load_css() }}
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Silvia's Favorite Acronym</h1>
+
+        <p class="text-center">
+            My favorite acronym is YALQMDLG because I Do whatever I want
+        </p>
+
+        <div class="text-center">
+            <img src="{{ url_for('static', filename='badbunny.jpeg') }}" class="rounded w-50">
+        </div>
+
+        <p class="text-center mt-3">
+            This page uses a Flask template and Bootstrap-Flask.
+        </p>
+    </div>
+
+    {{ bootstrap.load_js() }}
+</body>
+</html>
